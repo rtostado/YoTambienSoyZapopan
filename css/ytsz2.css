@@ -129,3 +129,10 @@ div img  #item{
 	max-width: 400px;
 	max-height: 100px;
 }
+
+.error404{
+	/*display: inline;*/
+	font-size: 8em;
+	line-height: 1.5em;
+	
+}
