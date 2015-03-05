@@ -1,0 +1,74 @@
+body {
+	background-image: url("../img/fondoNube.jpg");
+	background-attachment: fixed;
+	background-position: center;
+}
+
+header {
+	width: 100%;
+	height: 95px;
+	background-color: #B7008F;
+}
+footer{
+	padding: 0;
+	width: 100%;
+	height: 100px;
+	background-color: #18182B;
+	clear: both;
+	text-align: center;
+}
+nav {
+	height: 45px;
+	background-color: #670050;
+	padding: 0px 5%;
+}
+aside{
+	height: 10em;
+	width: 15%;
+	float: left;
+	/*position: relative;*/
+}
+div#wrapper{
+	position: fixed;
+	width: 100%; 
+}
+
+#navMain > li {
+	float: left;
+	color: #CECFCF;
+	margin: 10px 70px;
+	font: "Arial Black"; 
+	
+	
+}
+ul {
+	margin: 0px 0%;
+	list-style: none outside none; 
+	color: white;
+	width: 100%;
+	
+}
+li a {
+	color: white;
+	font-style: normal;
+}
+#main article {
+	-webkit-box-shadow: 21px 34px 5px -7px rgba(94,94,110,1);
+	-moz-box-shadow: 21px 34px 5px -7px rgba(94,94,110,1);
+	box-shadow: 21px 34px 5px -7px rgba(94,94,110,1);
+	background-color: white;
+	width: 80%;
+	height: 30em;
+	margin: 50px 10% 15% 60px;
+	float: left;
+	
+}
+footer img{
+	max-width: 100%;
+	max-height: 99%;
+	margin-bottom: 0px;
+}
+header img {
+	max-width: 100%;
+	max-height: 99%;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Banco de Ideas</title>
+		<meta charset="UTF-8" />
+			<link rel="stylesheet" type="text/css" href="../css/ytsz2.css" />
+			<link rel="stylesheet" type="text/js" href="../js/vendor/modernizr.js" />
+			<link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+			<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+			<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-responsive.css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<img src="../img/logo rectangulo.png" alt="">
+			</header>
+			<nav>
+				<ul id="navMain">
+					<li id="navquienesSomos">
+						<a href="">Quienes Somos</a>
+					</li>
+					<li id="navNoticias">
+						<a href="">Noticias</a>
+					</li>
+					<li id="Galeria">
+						<a href="">Galeria</a>
+					</li>
+					<li id="navActividades">
+						<a href="">Actividades</a>
+					</li>
+					<li id="navContacto">
+						<a href="">Contacto</a>
+					</li>
+				</ul>
+			</nav>
+		</div>		
+		<aside class = "banner">
+			
+		</aside>
+		<section>
+			<form method = "post">
+				<caption><h2>Registro del Banco de Ideas</h2></caption>
+				<div>
+					<label for = "ideaId"> Numero de Idea:</label>
+					<input type = "number" required id = "ideaId" name = "ideaId" placeholder = "identificador" />
+				</div>
+				<div>
+					<label for = "ciudadano_num_afiliacion"> Identificador Ciudadano: </label>
+					<input type = "text"  id = "ciudadano_num_afiliacion" name ="ciudadano_num_afiliacion" placeholder ="de quien es la idea"/>
+				</div>
+				<legend>
+				<div>
+					<label for = "nombre"> Nombre:</label>
+					<input type = "text" required id = "nombre" name ="nombre" placeholder ="nombre de Idea" />
+				</div>
+				</legend>
+				<legend>
+					<div>
+						<label for = "descripcion"> Descripcion: </label>
+						<textarea name="descripcion" required  id = "descripcion" cols="50" rows="5" placeholder = "En que consiste la idea"></textarea>
+					</div>
+				</legend>
+				<legend>
+				<div>
+					<input type = "submit" value ="Registrar" />
+					<input  type ="reset" value = "Borrar Campos" />
+				</div>	
+				</legend>
+			</form>
+		</section>
+		<aside class = "banner">
+			
+		</aside>
+		<footer>
+			<nav id="navFooter">
+				<ul class="menuFooter">
+					<li>
+						<a href=""><h5>Aviso Legal</h5></a>
+					</li>
+					<li>
+						<a href=""><h5></h5></a>
+					</li>
+				</ul>
+			</nav>
+			<img src="../img/LOGO CON FONDO WEB.png" alt="">
+		</footer>
+	</body>
+</html>

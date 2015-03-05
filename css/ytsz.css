@@ -1,0 +1,40 @@
+*{
+	border-radius: 30px;
+}
+fieldset{
+	margin: 20% 30%;
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+label {
+	margin: 1em;
+}
+input#nombre {
+	margin-left: 1.9em;
+}
+fieldset div a, fieldset div button{
+	text-align: center;
+	margin: 5px 20px;
+}
+fieldset {
+	-webkit-box-shadow: 21px 34px 5px -7px rgba(94,94,110,1);
+	-moz-box-shadow: 21px 34px 5px -7px rgba(94,94,110,1);
+	box-shadow: 21px 34px 5px -7px rgba(94,94,110,1);
+	background-color: white;
+}
+html {
+	background-image: url("../img/fondoNube.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-color: #D300A4;
+}
+legend {
+	text-align: center; 
+	font
+}
+header {
+	width: 95%;
+	height: 50px;
+	background-color: #B7008F;
+}

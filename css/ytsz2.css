@@ -1,0 +1,131 @@
+body {
+	background-image: url("../img/fondoNube.jpg");
+	background-attachment: fixed;
+	background-position: center;
+}
+
+header {
+	width: 100%;
+	height: 95px;
+	background-color: #B7008F;
+}
+footer{
+	padding: 0;
+	width: 100%;
+	height: 100px;
+	background-color: #18182B;
+	clear: both;
+	text-align: center;
+}
+nav {
+	height: 45px;
+	background-color: #670050;
+	padding: 10px 0%;
+}
+aside{
+	height: 10em;
+	width: 15%;
+	float: left;
+	/*position: relative;*/
+}
+caption{
+	text-align: center;
+}
+section {
+	margin-top: 160px;
+	background-color: white;
+	width: 70%;
+	height: auto;
+	float: left;	
+}
+
+div#wrapper{
+	position: absolute;
+	width: 100%; 
+}
+
+#navMain > li {
+	float: left;
+	color: #CECFCF;
+	margin: 10px 70px;
+	font: "Arial Black"; 
+}
+legend{
+	float: left;
+	font-style: normal;
+	border-style: none;
+}
+form{
+	padding-left: 5em;
+}
+div{
+	padding-bottom: 2px;
+	float: left;
+	padding-left: 7px;
+}
+ul {
+	margin: 0px 0%;
+	list-style: none outside none; 
+	color: white;
+	width: 100%;
+	
+}
+li a {
+	color: white;
+	font-style: normal;
+}
+#enviar{
+	float: right;
+	padding-right: 4em;
+}
+#main  {
+	-webkit-box-shadow: 21px 34px 5px -7px rgba(94,94,110,1);
+	-moz-box-shadow: 21px 34px 5px -7px rgba(94,94,110,1);
+	box-shadow: 21px 34px 5px -7px rgba(94,94,110,1);
+	background-color: white;
+	width: 80%;
+	height: 40em;
+	/*margin: 50px 10% 15% 60px;*/
+	float: left;
+	margin-top: 160px;
+	margin-left: 10%;
+	
+}
+footer img{
+	max-width: 100%;
+	max-height: 99%;
+	margin-bottom: 0px;
+}
+header img {
+	max-width: 100%;
+	max-height: 100%;
+}
+#slideshow{
+	/*background-color: white;*/
+	 /*position: relative;
+	 /*display: block;*/
+	 margin: auto;
+	 width: 75%;
+	 width: 640px;
+	 height: 300px;
+	 padding-bottom: 0px;
+	 padding-top: 0px;
+	 padding-left: 0px;
+	 padding-right: 0px;
+	 /*box-shadow: 0 0 20px rgba(0,0,0,0.4);*/
+}
+#slideshow > div{
+	
+    background-image: gradient(...);
+	background-size: 200px 200px;
+	background-size: 50% 50%;
+	/*position: relative;*/
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+}
+div img  #item{
+	max-width: 400px;
+	max-height: 100px;
+}

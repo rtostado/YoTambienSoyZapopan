@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ciudadano</title>
+		<meta charset="UTF-8" />
+			<link rel="stylesheet" type="text/css" href="../css/ytsz2.css" />
+			<link rel="stylesheet" type="text/js" href="../js/vendor/modernizr.js" />
+			<link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+			<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+			<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-responsive.css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<img src="../img/logo rectangulo.png" alt="">
+			</header>
+			<nav>
+				<ul id="navMain">
+					<li id="navquienesSomos">
+						<a href="">Quienes Somos</a>
+					</li>
+					<li id="navNoticias">
+						<a href="">Noticias</a>
+					</li>
+					<li id="Galeria">
+						<a href="">Galeria</a>
+					</li>
+					<li id="navActividades">
+						<a href="">Actividades</a>
+					</li>
+					<li id="navContacto">
+						<a href="">Contacto</a>
+					</li>
+				</ul>
+			</nav>
+		</div>		
+		<aside class = "banner">
+			
+		</aside>
+		<section>
+			<form method = "post">
+				<caption><h2>Registro de Ciudadanos</h2></caption>
+				<legend id = "nombres">
+					<div>
+						<label for="nombre">Nombre*</label>
+						<input type="textname" required id="nombre" name="nombre" placeholder="nombre" />
+					</div>
+					<div>
+						<label for="apellidoP">Apellido Paterno*</label>
+						<input type="text" required id="apellidoP" name="apellidoP" placeholder ="apellido Paterno"/>
+					</div>
+					<div>
+						<label for="apellidoM">Apellido Materno*</label>
+						<input type="text" required id="apellidoM" name="apellidoM" placeholder="apellido Materno" />
+					</div>
+					<div>
+						<label for = "fechaNac">Fecha de Nacimiento</label>
+						<input type = "date" name = "fechaNac" id ="fechaNac">
+					</div>
+				</legend>
+				<legend>
+					<div>
+						<label for="calle">Calle</label>
+						<input type="text" id="calle" name="calle" />
+					</div>
+					<div>
+						<label for="numeroExt">Numero Exterior</label>
+						<input type="text" id="numeroExt" name="numeroExt" />
+					</div>
+					<div>
+						<label for="colonia">Colonia</label>
+						<select>
+							<optgroup>
+								<option>Jardin Real</option>
+								<option>Jardines del valle</option>
+								<option>El colli urbano </option>
+								<option>Lomas de Zapopan</option>
+								<option>Otro</option>
+							</optgroup>
+						</select>
+					</div> 
+					<div>
+						<label for="codigoPostal">Codigo Postal</label>
+						<input type="text" id="codigoPostal" name="codigoPostal" />
+					</div>
+					<div>
+						<input type="radio" name="sexo" value="Masculino"/> Masculino
+						<input type="radio" name="sexo" value="Femenino"/> Femenino
+					</div>
+					
+				</legend>
+				<legend>
+					<div>
+						<label for="distrito">Distrito</label>
+						<input type="radio" name="distrito" value="distrito 4"/> 4
+						<input type="radio" name="distrito" value="distrito 6"/> 6
+						<input type="radio" name="distrito" value="distrito 10"/> 10
+					</div>
+					<div>
+						<label for="seccion">Sección</label>
+						<input type="text" id="seccion" name="seccion" />
+					</div>
+				</legend>
+				<legend>
+					<div>
+						<label for="telefono">Telefono fijo</label>
+						<input type="tel" id="telefono" name="telefono" pattern="[d]{10}" />
+					</div>
+					<div>
+						<label for="correoElectronico">Correo electronico*</label>
+						<input type="email" required id="correoElectronico" name="correoElectronico" placeholder ="correo electronico" />
+					</div>
+					<div>
+						<label for = "refenciadoPor"> Referenciado Por: </label>
+						<input type ="number" id ="refereniadoPor" name ="referenciadoPor">
+					</div>
+				</legend>
+				<legend>
+					<div>
+						<label for = "solicitud"> Solicitud </label>
+						<input type ="file" id ="solicitud" name = "solicitud" placeholder = "seleccione archivo"/>
+					</div>
+					<div id="enviar">
+						<input type = "submit" name = "enviar" value = "Enviar"/>
+						<input  type ="reset" value = "Borrar Campos" />
+					</div>
+				</legend>
+			</form>
+		</section>
+		<aside class = "banner">
+			
+		</aside>
+		<footer>
+			<nav id="navFooter">
+				<ul class="menuFooter">
+					<li>
+						<a href=""><h5>Aviso Legal</h5></a>
+					</li>
+					<li>
+						<a href=""><h5></h5></a>
+					</li>
+				</ul>
+			</nav>
+			<img src="../img/LOGO CON FONDO WEB.png" alt="">
+		</footer>
+	</body>
+</html>
