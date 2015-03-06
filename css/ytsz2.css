@@ -16,6 +16,7 @@ footer{
 	background-color: #18182B;
 	clear: both;
 	text-align: center;
+	position: bottom;
 }
 nav {
 	height: 45px;
