@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quienes somos</title>
+		<meta charset="UTF-8" />
+			<link rel="stylesheet" type="text/js" href="js/vendor/modernizr.js" />
+		   <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+			<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.css">
+			<link rel="stylesheet" type="text/css" href="css/styles.css" />
+			<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+			<link rel="stylesheet" type="text/css" href="bootstrap/css/styles.css">
+	</head>
+	<body>
+		<header id="header" class="navbar navbar-bright navbar-fixed-top" role="banner">
+  		<div class="container">
+    		<div class="navbar-header">
+      		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+      		</button>
+      		<a href="" class="navbar-brand">Inicio</a>
+    		</div>
+    	<nav class="collapse navbar-collapse" role="navigation">
+      	<ul class="nav navbar-nav">
+        			<li>
+						<a href="Vistas/QuienesSomos.html">Quienes Somos</a>
+					</li>
+					<li id="navNoticias">
+						<a href="">Novedades</a>
+					</li>
+					<li id="Galeria">
+						<a href="">Galeria</a>
+					</li>
+					<li id="navActividades">
+						<a href="">Actividades</a>
+					</li>
+					<li id="navContacto">
+						<a href="">Contacto</a>
+					</li>
+      	</ul>
+    	</nav>
+  	</div>
+	</header>
+		<div id="masthead">			
+			<div class="container">
+			<div class="row">
+				<div class="col-md-7">
+					<h1>
+						<a id="logo-img">
+							<img  src="img/LOGO SOLO.png" alt="Yo tambien soy Zapopan A.C."> 
+						</a>
+					</h1>
+				</div>
+			</div>
+		</div>
+			<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="top-spacer"></div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div id="main" class="container">		
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel">
+						<div class="panel-body">
+							<div class="row">
+								<br></br>
+								<div class="col-md-2 col-sm-3 text-center">
+									<h3>Misión</h3>
+								</div>
+								<div class="col-md-10 col-sm-9">
+									<div class="row">
+										<div class="col-xs-9">
+											<p>
+										Forjar una nueva generación de zapopanos, con capacidad de reflexión, 
+										sensibilización y una conciencia de participación basada 
+										en el ejercicio de los valores humanos, y en particular en la cultura del 
+										esfuerzo y del trabajo en equipo.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<br></br>
+								<div class="col-md-2 col-sm-3 text-center">
+									<h3>Visión</h3>
+								</div>
+								<div class="col-md-10 col-sm-9">
+									<div class="row">
+										<div class="col-xs-9">
+											<p>
+												Ser el referente modelo, a nivel nacional, de un municipio potencia, por su calidad 
+												de vida y personalidad  moral social y política, garante de la consolidación de  una 
+												comunidad con armonía   social estable y permanente.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<br></br>
+								<div class="col-md-2 col-sm-3 text-center">
+									<h3>Valores</h3>
+								</div>
+								<div class="col-md-10 col-sm-9">
+									<div class="row">
+										<div class="col-xs-9">
+											<p>
+												Los esquemas de negligencia, apatía, indiferencia y corrupción que enfrentamos en la actualidad, demandan 
+												de la aplicación de una coraza de defensa, a través de la aplicación consciente y comprometida de 
+											   nuestros valores:
+											   <br></br>
+											   <br>-Amor
+												<br>-Honestidad.
+												<br>-Responsabilidad.
+												<br>-Servicio-
+												<br>-Compromiso.
+												<br>-Trabajo en equipo.
+												<br>-Gratitud.
+												<br>-Armonía.
+												<br>-Participación.
+												<br>-Esfuerzo.
+												<br>-Libertad.
+												<br>-Constancia.
+												<br>-Equidad.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-xs-12">
+						<ul class="list-inline">
+							<li class="social-network">
+								<a href="https://www.facebook.com/YoTambienSoyZapopanAC?ref=hl">
+									<img src="img/facebook.png" alt="">
+								</a>
+							</li>
+							<li class="social-network">
+								<a href="https://www.facebook.com/YoTambienSoyZapopanAC?ref=hl">
+									<img src="img/twitter.png" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="logo-footer" class="row">
+				 <div class="col-md.12">
+				 	<a >
+						<img src="" alt="">
+					</a>
+				 </div>
+					
+				</div>
+			</div>
+		</footer>	
+	</body>
+</html>
+		
+		<!--<aside class = "banner">
+			
+		</aside>
+		<section><div class="container">
+		    <div class="row">
+		        <div class="col-md-12">
+		            <div class="error-template">
+		               
+		                <h1 class="error404">
+		                    404 Pagina no encontrada :(</h1>
+		               
+		            </div>
+		        </div>
+		    </div>
+		</div>
+
+		</section>
+		<aside class = "banner">
+			
+		</aside>
+		<footer>
+			<nav id="navFooter">
+				<ul class="menuFooter">
+					<li>
+						<a href=""><h5>Aviso Legal</h5></a>
+					</li>
+					<li>
+						<a href=""><h5></h5></a>
+					</li>
+				</ul>
+			</nav>
+			<img src="../img/LOGO CON FONDO WEB.png" alt="">
+		</footer>-->
+	

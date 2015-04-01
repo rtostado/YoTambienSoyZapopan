@@ -1,0 +1,46 @@
+@font-face
+{
+   font-family: "Cristalab";
+   src: url("fuentefancy.eot");
+   src: url("fuentefancy.eot?#amocristalab") format("embedded-opentype"),
+        url("fuentefancy.woff") format("woff"),
+        url("fuentefancy.ttf") format("truetype"),
+        url("fuentefancy.svg#IDdelafuente") format("svg");
+}
+body{
+	background-image: url("../img/fondoNube.jpg");
+}
+body div#masthead{
+	background-image: url("../img/fondoNube.jpg");
+}
+#header{
+	background-color: #670050;
+	
+}
+#footer{
+	background-color: #18182B;
+}
+#logo-footer{
+	text-align: center;
+	margin: -8em 0em;
+	width: 175px;
+}
+.social-network a img{
+	width: 66px;
+	height: 66px;
+}
+a#logo-img img{
+	width: 3.5em;
+	height: 3.5em;
+	margin-top: -.5em;
+	margin-left: 0.8em;
+}
+div#masthead{
+	/*background-color: #B7008F;*/
+	background-color: white;
+}
+#main{
+	
+	
+}
+
