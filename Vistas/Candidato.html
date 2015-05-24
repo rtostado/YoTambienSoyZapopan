@@ -24,7 +24,7 @@
     	<nav class="collapse navbar-collapse" role="navigation">
       	<ul class="nav navbar-nav">
         			<li>
-						<a href="Vistas/QuienesSomos.html">Quienes Somos</a>
+						<a href="">Quienes Somos</a>
 					</li>
 					<li id="navNoticias">
 						<a href="">Novedades</a>
@@ -37,9 +37,6 @@
 					</li>
 					<li id="navContacto">
 						<a href="">Contacto</a>
-					</li>
-					<li id="navRegistro">
-						<a href="">Registro</a>
 					</li>
       	</ul>
     	</nav>
@@ -58,58 +55,106 @@
 			</div>
 		</div>
 			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="top-spacer"></div>
-					</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="top-spacer"></div>
 				</div>
 			</div>
 		</div>
+		</div>
 		<form action = "../index.php?ctrl=candidato" method = "post">
-			<caption><h2>Registro de Candidato</h2></caption>
-				<div>
-					<tr>
-						<td>
-							<label for ="act">Actividad</label>
-						</td>
-						<td>
-							<select name ="act" required>
-								<optgroup>
-									<option></option>
-									<option>Insertar</option>
-									<option>Modificar</option>
-									<option>Eliminar</option>
-								</optgroup>
-							</select>
-						</td>
-					</tr>
-				</div>
-				<div>
-					<label for="coloniaId"> Numero de Candidato:</label>
-					<input type ="number" id="candidato_id" name ="candidato_id" />
-				</div>
-				<legend>
-				<div>
-					<label for="colonia"> Nombre: </label>
-					<input type="text" required id="nombre" name="nombre" placeholder ="Nombre" />
-				</div>
-				</legend>
-				<legend>
-					<div>
-						<label for ="asociacion_col"> Apellido Paterno: </label>
-						<input type ="text" id="apellidop" name="apellidop" placeholder="Apellido Paterno" />
+			<div id="main" class="container">		
+				<div class="row">
+					<div class="col-md-12">
+						<div class="panel">
+							<div class="panel-body">
+								<div class="row">
+									<caption><h2>Registro de Calle</h2></caption>
+									<div>
+										<tr>
+											<td>
+												<label for ="act">Actividad</label>
+											</td>
+											<td>
+												<select name ="act" required>
+													<optgroup>
+														<option></option>
+														<option>Insertar</option>
+														<option>Modificar</option>
+														<option>Eliminar</option>
+													</optgroup>
+												</select>
+											</td>
+										</tr>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-10 col-sm-9">
+										<div class="row">
+											<div class="col-xs-9">
+												<div>
+													<div>
+														<label for="coloniaId"> Numero de Candidato:</label>
+														<input type ="number" id="candidato_id" name ="candidato_id" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-10 col-sm-9">
+										<div class="row">
+											<div class="col-xs-9">
+												<div>
+													<label for="colonia"> Nombre: </label>
+													<input type="text" required id="nombre" name="nombre" placeholder ="Nombre" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-10 col-sm-9">
+										<div class="row">
+											<div class="col-xs-9">
+												<div>
+													<label for ="asociacion_col"> Apellido Paterno: </label>
+													<input type ="text" id="apellidop" name="apellidop" placeholder="Apellido Paterno" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-10 col-sm-9">
+										<div class="row">
+											<div class="col-xs-9">
+												<div>
+													<label for="apellidom">Apellido Materno:</label>
+													<input type="text" id="apellidom" name="apellidom" placeholder="Apellido Materno">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-10 col-sm-9">
+										<div class="row">
+											<div class="col-xs-9">
+												<div>
+													<input type = "submit" value ="Registrar" />
+													<input  type ="reset" value = "Borrar Campos" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div>
-						<label for="presidente_col">Presidente de Colonos:</label>
-						<input type="text" id="apellidom" name="apellidom" placeholder="Apellido Materno">
-					</div>
-				</legend>
-				<legend>
-				<div>
-					<input type = "submit" value ="Registrar" />
-					<input  type ="reset" value = "Borrar Campos" />
-				</div>	
-				</legend>
+				</div>
+			</div>
 		</form>
 		<footer id="footer">
 			<div class="container">
@@ -118,12 +163,12 @@
 						<ul class="list-inline">
 							<li class="social-network">
 								<a href="https://www.facebook.com/YoTambienSoyZapopanAC?ref=hl">
-									<img src="img/facebook.png" alt="">
+									<img src="../img/facebook.png" alt="">
 								</a>
 							</li>
 							<li class="social-network">
 								<a href="https://www.facebook.com/YoTambienSoyZapopanAC?ref=hl">
-									<img src="img/twitter.png" alt="">
+									<img src="../img/twitter.png" alt="">
 								</a>
 							</li>
 						</ul>
