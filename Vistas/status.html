@@ -3,24 +3,31 @@
 	<head>
 		<title>Status</title>
 		<meta charset="UTF-8" />
-			<link rel="stylesheet" type="text/css" href="../css/ytsz2.css" />
 			<link rel="stylesheet" type="text/js" href="../js/vendor/modernizr.js" />
-			<link rel="stylesheet" type="text/css" href="../css/normalize.css" />
-			<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+		   <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
 			<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-responsive.css">
+			<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+			<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+			<link rel="stylesheet" type="text/css" href="../bootstrap/css/styles.css">
 	</head>
 	<body>
-		<div id="wrapper">
-			<header>
-				<img src="../img/logo rectangulo.png" alt="">
-			</header>
-			<nav>
-				<ul id="navMain">
-					<li id="navquienesSomos">
+		<header id="header" class="navbar navbar-bright navbar-fixed-top" role="banner">
+  		<div class="container">
+    		<div class="navbar-header">
+      		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+      		</button>
+      		<a href="" class="navbar-brand">Inicio</a>
+    		</div>
+    	<nav class="collapse navbar-collapse" role="navigation">
+      	<ul class="nav navbar-nav">
+        			<li>
 						<a href="">Quienes Somos</a>
 					</li>
 					<li id="navNoticias">
-						<a href="">Noticias</a>
+						<a href="">Novedades</a>
 					</li>
 					<li id="Galeria">
 						<a href="">Galeria</a>
@@ -31,32 +38,133 @@
 					<li id="navContacto">
 						<a href="">Contacto</a>
 					</li>
-				</ul>
-			</nav>
-		</div>		
-		<aside class = "banner">
+      	</ul>
+    	</nav>
+  	</div>
+	</header>
+		<div id="masthead">			
+			<div class="container">
+			<div class="row">
+				<div class="col-md-7">
+					<h1>
+						<a id="logo-img">
+							<img  src="../img/LOGO SOLO.png" alt="Yo tambien soy Zapopan A.C."> 
+						</a>
+					</h1>
+				</div>
+			</div>
+		</div>
+			<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="top-spacer"></div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<form action = "../index.php?ctrl=status" method = "post">
+			<div id="main" class="container">		
+				<div class="row">
+					<div class="col-md-12">
+						<div class="panel">
+							<div class="panel-body">
+								<div class="row">
+									<caption><h2>Registro de Status</h2></caption>
+									<div>
+										<tr>
+											<td>
+												<label for ="act">Actividad</label>
+											</td>
+											<td>
+												<select name ="act" required>
+													<optgroup>
+														<option></option>
+														<option>Insertar</option>
+														<option>Modificar</option>
+														<option>Eliminar</option>
+													</optgroup>
+												</select>
+											</td>
+										</tr>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-10 col-sm-9">
+										<div class="row">
+											<div class="col-xs-9">
+												<div>
+													<label for="status"> Tipo de Status: </label>
+													<input type="text" required id="status" name="status" placeholder ="Nombre" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-10 col-sm-9">
+										<div class="row">
+											<div class="col-xs-9">
+												<div>
+													<input type = "submit" value ="Registrar" />
+													<input  type ="reset" value = "Borrar Campos" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+		<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-xs-12">
+						<ul class="list-inline">
+							<li class="social-network">
+								<a href="https://www.facebook.com/YoTambienSoyZapopanAC?ref=hl">
+									<img src="../img/facebook.png" alt="">
+								</a>
+							</li>
+							<li class="social-network">
+								<a href="https://www.facebook.com/YoTambienSoyZapopanAC?ref=hl">
+									<img src="../img/twitter.png" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="logo-footer" class="row">
+				 <div class="col-md.12">
+				 	<a >
+						<img src="" alt="">
+					</a>
+				 </div>
+					
+				</div>
+			</div>
+		</footer>	
+	</body>
+</html>
+		
+		<!--<aside class = "banner">
 			
 		</aside>
-		<section>
-			<form method = "post">
-				<caption><h2>Registro de Status</h2></caption>
-				<div>
-					<label for="statusId"> Numero de Status:</label>
-					<input type ="number" required id="statusId" name ="statusId" />
-				</div>
-				<legend>
-				<div>
-					<label for="status"> Nombre del Status: </label>
-					<input type="text" required id="status" name="status" placeholder ="Nombre" />
-				</div>
-				</legend>
-				<legend>
-				<div>
-					<input type = "submit" value ="Registrar" />
-					<input  type ="reset" value = "Borrar Campos" />
-				</div>	
-				</legend>
-			</form>
+		<section><div class="container">
+		    <div class="row">
+		        <div class="col-md-12">
+		            <div class="error-template">
+		               
+		                <h1 class="error404">
+		                    404 Pagina no encontrada :(</h1>
+		               
+		            </div>
+		        </div>
+		    </div>
+		</div>
+
 		</section>
 		<aside class = "banner">
 			
@@ -73,6 +181,5 @@
 				</ul>
 			</nav>
 			<img src="../img/LOGO CON FONDO WEB.png" alt="">
-		</footer>
-	</body>
-</html>
+		</footer>-->
+	
