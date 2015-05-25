@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Usuario</title>
+		<meta charset="UTF-8" />
+			<link rel="stylesheet" type="text/js" href="../js/vendor/modernizr.js" />
+		   <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+			<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-responsive.css">
+			<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+			<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+			<link rel="stylesheet" type="text/css" href="../bootstrap/css/styles.css">
+	</head>
+	<body>
+		<header id="header" class="navbar navbar-bright navbar-fixed-top" role="banner">
+  		<div class="container">
+    		<div class="navbar-header">
+      		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+      		</button>
+      		<a href="" class="navbar-brand">Inicio</a>
+    		</div>
+    	<nav class="collapse navbar-collapse" role="navigation">
+      	<ul class="nav navbar-nav">
+        			<li>
+						<a href="">Quienes Somos</a>
+					</li>
+					<li id="navNoticias">
+						<a href="">Novedades</a>
+					</li>
+					<li id="Galeria">
+						<a href="">Galeria</a>
+					</li>
+					<li id="navActividades">
+						<a href="">Actividades</a>
+					</li>
+					<li id="navContacto">
+						<a href="">Contacto</a>
+					</li>
+      	</ul>
+    	</nav>
+  	</div>
+	</header>
+		<div id="masthead">			
+			<div class="container">
+			<div class="row">
+				<div class="col-md-7">
+					<h1>
+						<a id="logo-img">
+							<img  src="../img/LOGO SOLO.png" alt="Yo tambien soy Zapopan A.C."> 
+						</a>
+					</h1>
+				</div>
+			</div>
+		</div>
+			<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="top-spacer"></div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<form action = "../index.php?ctrl=usuario" method = "post">
+			<div id="main" class="container">		
+				<div class="row">
+					<div class="col-md-12">
+						<div class="panel">
+							<div class="panel-body">
+								<div class="row">
+									<caption><h2>Registro de Calle</h2></caption>
+									<div>
+										<tr>
+											<td>
+												<label for ="act">Actividad</label>
+											</td>
+											<td>
+												<select name ="act" required>
+													<optgroup>
+														<option></option>
+														<option>Insertar</option>
+														<option>Modificar</option>
+														<option>Eliminar</option>
+													</optgroup>
+												</select>
+											</td>
+										</tr>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-10 col-sm-9">
+										<div class="row">
+											<div class="col-xs-9">
+												<div>
+													<div>
+														<label for="usuario_id"> Numero de Usuario:</label>
+														<input type ="number" id="usuario_id" name ="usuario_id" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-10 col-sm-9">
+										<div class="row">
+											<div class="col-xs-9">
+												<div>
+													<label for="colonia"> Nombre: </label>
+													<input type="text" required id="nombre" name="nombre" placeholder ="Nombre" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-10 col-sm-9">
+										<div class="row">
+											<div class="col-xs-9">
+												<div>
+													<label for ="asociacion_col"> Apellido Paterno: </label>
+													<input type ="text" id="apellidop" name="apellidop" placeholder="Apellido Paterno" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-10 col-sm-9">
+										<div class="row">
+											<div class="col-xs-9">
+												<div>
+													<label for="apellidom">Apellido Materno:</label>
+													<input type="text" id="apellidom" name="apellidom" placeholder="Apellido Materno">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-10 col-sm-9">
+										<div class="row">
+											<div class="col-xs-9">
+												<div>
+													<label for="correo">Correo:</label>
+													<input type="text" id="correo" name="correo" placeholder="Direccion de email">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-10 col-sm-9">
+										<div class="row">
+											<div class="col-xs-9">
+												<div>
+													<label for="password">Password:</label>
+													<input type="password" id="password" name="password" placeholder="password">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-10 col-sm-9">
+										<div class="row">
+											<div class="col-xs-9">
+												<div>
+													<input type = "submit" value ="Registrar" />
+													<input  type ="reset" value = "Borrar Campos" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+		<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-xs-12">
+						<ul class="list-inline">
+							<li class="social-network">
+								<a href="https://www.facebook.com/YoTambienSoyZapopanAC?ref=hl">
+									<img src="../img/facebook.png" alt="">
+								</a>
+							</li>
+							<li class="social-network">
+								<a href="https://www.facebook.com/YoTambienSoyZapopanAC?ref=hl">
+									<img src="../img/twitter.png" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="logo-footer" class="row">
+				 <div class="col-md.12">
+				 	<a >
+						<img src="" alt="">
+					</a>
+				 </div>
+					
+				</div>
+			</div>
+		</footer>	
+	</body>
+</html>
+		
+		<!--<aside class = "banner">
+			
+		</aside>
+		<section><div class="container">
+		    <div class="row">
+		        <div class="col-md-12">
+		            <div class="error-template">
+		               
+		                <h1 class="error404">
+		                    404 Pagina no encontrada :(</h1>
+		               
+		            </div>
+		        </div>
+		    </div>
+		</div>
+
+		</section>
+		<aside class = "banner">
+			
+		</aside>
+		<footer>
+			<nav id="navFooter">
+				<ul class="menuFooter">
+					<li>
+						<a href=""><h5>Aviso Legal</h5></a>
+					</li>
+					<li>
+						<a href=""><h5></h5></a>
+					</li>
+				</ul>
+			</nav>
+			<img src="../img/LOGO CON FONDO WEB.png" alt="">
+		</footer>-->
+	
