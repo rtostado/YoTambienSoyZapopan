@@ -25,6 +25,9 @@ class SeccionCtrl extends StandardCtrl{
 			case 'Modificar':
 				$this->Modificar();
 				break;
+			case 'Listar':
+				$this->listar();
+				break;
 			default:
 			break;
 		}
@@ -39,7 +42,8 @@ class SeccionCtrl extends StandardCtrl{
 		if($resultado){
 			//require 'Vista/InsercionCorrecta.php';
 			//require 'correo.php';
-			$this->modelo->mostrar();
+			//$this->modelo->mostrar();
+			$this->listar();
 		}
 		else {
 			//require 'Vista/Error.html';
@@ -68,7 +72,7 @@ class SeccionCtrl extends StandardCtrl{
 		}
 	}
 	
-	function listar(){
+	/*function listar(){
 		$colonias = $this->modelo->listar();
 		$vista = file_get_contents("./Vista/Seccion.html");
 		$inicio_fila = strrpos($vista,'<tr>');
@@ -87,9 +91,29 @@ class SeccionCtrl extends StandardCtrl{
 		$data = array('contenido' => $vista);
 		$this->crearLista($data);
 		}
+	}*/
+	function listar(){
+		$plantillaSeccion = file_get_contents("Vistas/Seccion.html");
+		$inicio_fila = strrpos($plantillaSeccion,'<tr>');
+		$fin_fila = strrpos($plantillaSeccion,'</tr>')+5;
+		$fila = substr($plantillaSeccion,$inicio_fila,$fin_fila-$inicio_fila);
+
+		$contTabSeccion=$this->modelo->consulta();
+		foreach($contTabSeccion as $row){
+			$new_fila = $fila;
+			$diccionario = array(
+				'{Seccion}'=>$row['seccion'],
+				'{Municipio}'=>['municipio_id']);
+				$new_fila=strtr($new_fila,$diccionario);
+				$filas.=$new_fila;				
+			
+		}
+		$plantillaSeccion=str_replace($fila,$filas,$plantillaSeccion);
+		
+		echo $plantillaSeccion;
 	}
 
-
+}
 
 
 ?>

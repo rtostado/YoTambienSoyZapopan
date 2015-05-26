@@ -54,5 +54,30 @@ class SeccionMdl{
 		}
 		return TRUE;
 	}
+	/*function listar(){
+		$colonias = FALSE;
+		$result = $this->bd_driver->query("SELECT * FROM seccion");
+		if($result!=FALSE){
+			$colonias=array();
+			while($row!=$result->fetch_assoc()){
+				$colonias[]=$row;
+				echo json_encode($alumnos);
+				//$row=$result->fetch_assoc();
+			}
+		}
+		return $secciones;
+	}*/
+	public function consulta(){
+		
+		$consulta = "SELECT `seccion`,`municipio_id` FROM `Seccion`";
+		$resultado = $this->bd_driver->query($consulta);
+		
+		while ($row = $resultado->fetch_assoc()) {
+			$rows[] = $row;
+		}
+		return $rows;
+		//echo json_encode($alumnos);
+		
+	}
 }
 ?>
