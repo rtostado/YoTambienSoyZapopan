@@ -9,6 +9,7 @@
 			<link rel="stylesheet" type="text/css" href="../css/styles.css" />
 			<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
 			<link rel="stylesheet" type="text/css" href="../bootstrap/css/styles.css">
+				
 	</head>
 	<body>
 		<header id="header" class="navbar navbar-bright navbar-fixed-top" role="banner">
@@ -62,21 +63,19 @@
 			</div>
 		</div>
 		</div>
-		<form action = "../index.php?ctrl=seccion" method = "post">
+		
 			<div id="main" class="container">		
 				<div class="row">
 					<div class="col-md-12">
 						<div class="panel">
 							<div class="panel-body">
 								<div class="row">
-									<caption><h2>Registro de Seccion</h2></caption>
-									<div>
-										<tr>
-											<td>
+								<form action = "../index.php?ctrl=seccion" method = "post">
+									<caption><h2>Registro de Sección</h2></caption>
+									
+									<div class="form">
 												<label for ="act">Actividad</label>
-											</td>
-											<td>
-												<select name ="act" required>
+												<select class="form-control" name ="act" required>
 													<optgroup>
 														<option></option>
 														<option>Insertar</option>
@@ -84,66 +83,51 @@
 														<option>Eliminar</option>
 													</optgroup>
 												</select>
-											</td>
-										</tr>
 									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-10 col-sm-9">
-										<div class="row">
-											<div class="col-xs-9">
-												<div>
+									<div class="form">
 													<label for="seccion_id"> Numero de Seccion: </label>
-													<input type="text"  id="seccion_id" name="seccion_id" placeholder ="numero" />
-												</div>
-											</div>
-										</div>
+													<input class="form-control" type="text"  id="seccion_id" name="seccion_id" placeholder ="" />
 									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-10 col-sm-9">
-										<div class="row">
-											<div class="col-xs-9">
-												<div>
+									<div class="form">
 													<label for="seccion"> Seccion: </label>
-													<input type="text" required id="seccion" name="seccion" placeholder ="Nombre" />
-												</div>
-											</div>
-										</div>
+													<input class="form-control" type="text" required id="seccion" name="seccion" placeholder ="Sección" />
 									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-10 col-sm-9">
-										<div class="row">
-											<div class="col-xs-9">
-												<div>
-													<tr>
-														<td>
-															<label for ="municipio_id">Municipio</label>
-														</td>
-														<td>
-															<select name ="municipio_id">
+									<div class="form">
+										<label for ="municipio_id">Municipio</label>
+										<select class="form-control" name ="municipio_id">
 																<optgroup>
 																	<option></option>																
 																</optgroup>
-															</select>
-														</td>
-													</tr>
-												</div>
-											</div>
-										</div>
+										</select>
 									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-10 col-sm-9">
-										<div class="row">
-											<div class="col-xs-9">
-												<div>
-													<input type = "submit" value ="Registrar" />
-													<input  type ="reset" value = "Borrar Campos" />
+									<div>
+													<br>
+													<input class="btn" type = "submit" value ="Registrar" />
+													
+									</div>
+									</form>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="panel">
+												<div class="panel-body">
+													<div class="row">
+														<table class="table">
+															<thead>
+																<th>Sección</th>
+																<th>Municipio</th>
+															</thead>
+															<tbody>
+		 														<tr>
+																	<td>{Sección}</td>
+																	<td>{Municipio}</td>
+																</tr>
+															</tbody>
+														</table>							
+													</div>
 												</div>
+						
 											</div>
-										</div>
+										</div>				
 									</div>
 								</div>
 							</div>
@@ -152,6 +136,7 @@
 				</div>
 			</div>
 		</form>
+		
 		<footer id="footer">
 			<div class="container">
 				<div class="row">
