@@ -3,42 +3,48 @@
 	 * 
 	 */
 	class SesionCtrl{
-		protected $modelo;
+		public $modelo;
 		
-		public static function isLogged(){
+		  function isLogged(){
 			return isset($_SESSION['usuario']);
 		}
 		
-		public static function logOut(){
+		  function logOut(){
 			session_unset();
 			session_destroy();
 	
 			setcookie(session_name(), '', time()-3600);
+			require 'index.html';
 		}
 		
 		function run(){
 		switch ($_GET['act']) {
-			case 'Login':
+			case 'login':
 				$this->logIn();				
 				break;
+			case 'logout':
+				$this->logOut();
+			break;
 			default:				
 				break;
+			}
 		}
-	}
+
+	
 		
 		 
-		 public static function logIn(){
-			$id_usuario = htmlentities($_POST['usuario']);
+		  function logIn(){
+			$id_usuario = htmlentities($_POST['nombre']);
 			$password = htmlentities($_POST['password']);
 			if(SesionCtrl::isLogged()){
 				echo "estas loggeado";
-				SesionCtrl::logOut();
+				//StandardCtrl::logOut();
 			}else{
-				require_once 'Modelo/SesionMdl.php';
+				require_once 'modelo/SesionMdl.php';
 				$modelo = new SesionMdl();
 				$resultado=$modelo->logIn($id_usuario, $password);
 				if($resultado){
-				require '/MVCyoZapopan/index.php';
+				require 'indexAdmin.html';
 				}
 				
 			}
