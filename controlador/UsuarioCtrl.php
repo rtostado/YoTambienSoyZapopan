@@ -3,15 +3,18 @@
 class UsuarioCtrl{
 	private $modelo;
 	private $valida;
-
+	private $mail;
+	
 
 	//constructor
 	function __construct(){
 		require 'Validar.php';
 		require 'modelo/UsuarioMdl.php';
+		require 'PHPMailer/PHPMailer/PHPMailerAutoload.php';
 
 		$this->modelo = new UsuarioMdl();
 		$this->valida = new Validar();
+		$this->mail = new PHPMailer;
 	}
 
 	function run(){
@@ -29,6 +32,17 @@ class UsuarioCtrl{
 			break;
 		}
 	}
+	public function enviaCorreo($nombre, $apellidop, $apellidom, $correo, $password){
+		$mensaje = "Estimado  $nombre $apellidop $apellidom\n
+Por este medio le informamos que su cuenta ha sido dada de alta con los siguentes datos:\n\n
+usuario: $correo\n
+password: $password\n\n
+quedamos a sus ordenes para cualquier duda o aclaracion\n\n
+\t\tATTE.\n
+\tYo Tambien Soy Zapopan A.C.";
+		mail($correo,'Mensaje de Bienvenida',$mensaje);
+	}
+
 
 	private function Insertar()
 	{
@@ -49,9 +63,11 @@ class UsuarioCtrl{
 		$nombre		= $this->valida->validaNombre($_POST['nombre']);
 		$resultado	= $this->modelo->Insertar($nombre, $apellidop, $apellidom, $correo, $password);
 		if($resultado){
+			$this->enviaCorreo($nombre, $apellidop, $apellidom, $correo, $password);
 			//require 'Vista/InsercionCorrecta.php';
-			require 'correo.php';
-			$this->modelo->mostrar();
+			//require 'correo.php';
+			//print "correo: $correo<br/>";
+			//$this->modelo->mostrar();
 		}
 		else {
 			//require 'Vista/Error.html';
