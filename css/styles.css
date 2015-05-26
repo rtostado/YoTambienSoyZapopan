@@ -43,4 +43,10 @@ div#masthead{
 	
 	
 }
+div.form{
+	float: left;
+	font-style: normal;
+	border-style: none;
+	padding: 0em 1em;
+}
 

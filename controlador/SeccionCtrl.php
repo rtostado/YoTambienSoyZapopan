@@ -1,17 +1,17 @@
 <?php
-
-class SeccionCtrl{
+require_once 'Controlador/StandardCtrl.php';
+class SeccionCtrl extends StandardCtrl{
 	private $modelo;
 	private $valida;
 
 
 	//constructor
 	function __construct(){
-		require 'Validar.php';
+	//	require 'Validar.php';
 		require 'modelo/SeccionMdl.php';
 
 		$this->modelo = new SeccionMdl();
-		$this->valida = new Validar();
+	//	$this->valida = new Validar();
 	}
 
 	function run(){
@@ -67,8 +67,29 @@ class SeccionCtrl{
 			$this->modelo->mostrar();
 		}
 	}
+	
+	function listar(){
+		$colonias = $this->modelo->listar();
+		$vista = file_get_contents("./Vista/Seccion.html");
+		$inicio_fila = strrpos($vista,'<tr>');
+		$final_fila = strrpos($vista,'</tr>') + 5;
+		$fila = substr($vista,$inicio_fila,$final_fila-$inicio_fila);
+		$filas = '';
+		foreach ($secciones as $row) {
+			$new_fila = $fila;
+			$diccionario = array(
+			'{seccion}' => $row['seccion'],
+			'{municipio}' => $row['municipio']);
+			$new_fila = strtr($new_fila,$diccionario);
+			$filas .= $new_fila;
+		}
+		$vista = str_replace($fila, $filas, $vista);
+		$data = array('contenido' => $vista);
+		$this->crearLista($data);
+		}
+	}
 
 
-}
+
 
 ?>
